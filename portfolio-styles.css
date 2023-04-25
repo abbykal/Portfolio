@@ -1,0 +1,130 @@
+
+/* Color Theme Swatches in Hex */
+.Ergon-bottled-water-1-hex { color: #ADC8D9; }
+.Ergon-bottled-water-2-hex { color: #4E7329; }
+.Ergon-bottled-water-3-hex { color: #F2B66D; }
+.Ergon-bottled-water-4-hex { color: #F28749; }
+.Ergon-bottled-water-5-hex { color: #D96941; }
+
+
+
+body {background: white;
+height: 100%}
+
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;}
+
+.menu.btn {
+color: #D98B8B; 
+font-size: 20px;
+cursor: pointer;
+display: none;
+}
+
+.navbar {
+padding: 20px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+z-index: 999;
+top: 0%;
+background-color: #ADC8D9;
+}
+
+.navbar .menu li{
+list-style: none;
+display: inline-block;
+}
+
+.navbar .menu li a{
+display: block;
+margin-left: 20px;
+color: #FE9D9B
+border-bottom: 4px solid transparent;
+text-decoration: none;
+font-family: "transat-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+}
+
+.navbar .menu li .active {
+border-bottom: 4px solid #475259;
+}
+
+.navbar .menu li a i{
+color: #FE9D9B;
+}
+
+.navbar .menu li a:hover {
+border-bottom: 4px solid #C4E2F5}
+
+h1 {
+font-family: "transat-text", sans-serif;
+font-weight: 700;
+font-style: normal;
+display: block;
+margin: 20px
+}
+
+.work {
+  margin-left: 50px;
+  margin-right: 30px
+  margin-bottom: 30px;
+  }
+
+.gallery {
+  margin-left: 50px;
+  margin-right: 30px
+  margin-bottom: 30px;
+  display: inline-block;
+  }
+
+p{
+  font-family: "transat-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-top: 10px;
+}
+
+.URL {
+  font-family: "transat-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-top: 10px;
+}
+/* GALLERY */
+
+
+
+
+/* footer */
+
+footer{
+background-color: #475259;
+height: 10vh;
+}
+
+footer p {
+text-align: center;
+line-height: 10vh;
+font-family: "transat-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+}
+
+
+footer p a {
+text-decoration: none;
+color: white;
+font-family: "transat-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}

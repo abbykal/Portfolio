@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bagel Shack</title>
+    <link href="Bagel-stylesheet.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>Menu</h1>
+        <p> <img src="bagelshacklogo.png"
+        width="300" height="150"></p>
+         <div class="slides">
+  <img src="Bacon-Egg-Cheese-Bagel-Breakfast-Sandwich.jpg" /> 
+  <img src="bagel box.jpeg" />
+  <img src="Turkey-Bagel-Sandwich_-5.jpg" /> </div>
+        <hr>
+        <section>
+          <h2>Breakfast Bagels</h2>
+          <img src="sandwich icon.png" width="80" height="60"/>
+          <article class="item">
+            <p class="flavor">Egg, and Cheese</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Sausage, Egg, and Cheese</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor"> Bacon, Egg, and Cheese</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Fresh Bagel with Cream Cheese</p><p class="price">1.00</p>
+          </article>
+        </section>
+        <section>
+          <h2>Bagel Sandwiches</h2>
+          <p><img src="blt.png" width="80" height="60"/></p>
+          <article class="item">
+            <p class="dessert">Turkey</p><p class="price">4.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">BLT</p><p class="price">4.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Classic Hummus</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheese and Veggies</p><p class="price">3.50</p>
+          </article>
+        </section>
+        <section>
+        <h2>Fresh Bagels</h2>
+         <p><img src="box.png" width="100" height="60"/></p>
+        <article class="item">
+        <p class="flavor">Bagel Shack's Half a Dozen</p><p class="price">3.50</p>
+        <article class="item">
+        <p class="flavor">Plain, Everything, Cinnamon Raisin</p><p class="price">.85</p>
+        </article>
+         <article class="item">
+        <p class="flavor">Fresh Homemade Cream Cheese</p><p class="price">.50</p>
+        </article>
+        </section>
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p>
+          <a href="https://www.thebagelshack.org" target="_blank">Visit our website</a>
+        </p>
+        <p class="address">123 Main Street</p>
+        <p class="number"> 123-456-7890</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+body {
+  background-image: url(bagelbackground.png);
+  background-size: 900px 900px;
+  font-family: baskerville;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #E5AC27;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #C04F28;
+
+}
+h1,h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: #FFEDAD;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+   margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+  
+}
+
+hr {
+  height: 2px;
+  background-color: #E5AC27;
+  border-color: #E5AC27;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: gill sans;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+.slides {
+  display: grid;
+
+  gap: 1rem;
+
+  grid-auto-flow: column;
+  overflow-y: auto;
+  padding: 20px;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slides > img {
+  scroll-snap-align: start;
+}
+
+.slides img {
+  width: 150px;
+
+  object-fit: contain;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+</style>
